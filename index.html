@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <title>App9 Acelerometro y Geolocalizacion del Dispositivo</title>
 
-<!--Grupo CSS-->
 <link rel="stylesheet" href="css/app8.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
 <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
@@ -16,6 +15,57 @@
 <script src="phonegap.js"></script><!--necesario-->
 </head>
 <body>
-<div>
+<div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Aplicacion 9 Geolocalizacion y Acelerometro</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-last-child">
+        <a href="#ace1" id="ac" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Acelerometro</h2>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#ace1" id="ac" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Geolocalización</h2>
+        </a>
+      </li>
+    </ul>
+    </div>
+  </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>García Sánchez Sara Belén</h4>
+    <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="ace1" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Acelerometro</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="acelerometro">Esperando...</div>
+      <a data-role="button" href"#" onClick="Detener();">
+        Detener
+      </a>
+    </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>García Sánchez Sara Belén</h4>
+    <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
+<div data-role="page" id="page3" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Geolocalización del dispositivo</h1>
+  </div>
+  <div data-role="main" class="ui-content">
+    <div id="geolocalizacion">Esperando...</div>
+    </div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+    <h4>García Sánchez Sara Belén</h4>
+    <img src="res/android/mdpi.png" width="56" height="46">
+  </div>
+</div>
 </body>
 </html>
